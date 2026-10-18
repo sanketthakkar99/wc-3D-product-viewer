@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g fill="none" stroke="#1d2327" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 30 152 58v58l-52 28-52-28V58z"/>
+    <path d="M48 58l52 28 52-28M100 86v58"/>
+    <path d="M30 118c0 15 31 28 70 28s70-13 70-28" stroke-width="4" stroke-dasharray="2 9" opacity=".55"/>
+    <path d="M160 138l10-20 12 18" stroke-width="4" opacity=".55"/>
+  </g>
+  <text x="100" y="186" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1d2327" letter-spacing="2">3D</text>
+</svg>

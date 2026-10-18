@@ -1,0 +1,123 @@
+/* WC 3D Product Viewer – admin */
+
+.wc3d-models {
+	margin: 4px 0 8px;
+	padding: 0;
+	list-style: none;
+}
+.wc3d-models.is-empty {
+	display: none;
+}
+
+.wc3d-model {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 0 0 8px;
+	padding: 8px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #fff;
+}
+.wc3d-model--placeholder {
+	border: 1px dashed #8c8f94;
+	background: #f6f7f7;
+	visibility: visible !important;
+}
+.wc3d-model.ui-sortable-helper {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wc3d-model__handle {
+	cursor: move;
+	color: #8c8f94;
+	margin-top: 18px;
+	flex: none;
+}
+
+.wc3d-model__thumb {
+	flex: none;
+	width: 52px;
+	height: 52px;
+	padding: 0;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #f4f4f4;
+	cursor: pointer;
+	overflow: hidden;
+}
+.wc3d-model__thumb img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.wc3d-model__thumb.has-image img {
+	object-fit: cover;
+}
+.wc3d-model__thumb:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 1px;
+}
+
+.wc3d-model__body {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.wc3d-model__name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.wc3d-model__size {
+	color: #646970;
+	font-size: 12px;
+}
+.wc3d-box .wc3d-model__label {
+	width: 100%;
+	height: 28px;
+	min-height: 28px;
+	padding: 0 6px;
+	line-height: 26px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+.wc3d-model__links {
+	display: flex;
+	gap: 10px;
+	font-size: 12px;
+}
+.wc3d-model__links [hidden] {
+	display: none;
+}
+
+.wc3d-model__remove {
+	flex: none;
+	color: #b32d2e;
+	text-decoration: none;
+}
+
+.wc3d-empty {
+	color: #646970;
+	margin: 4px 0 8px;
+}
+
+/* Products list column. */
+.wp-list-table .column-wc3d {
+	width: 3em;
+	text-align: center;
+}
+.wc3d-col-count {
+	display: inline-block;
+	min-width: 20px;
+	padding: 1px 6px;
+	border-radius: 10px;
+	background: #2271b1;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 18px;
+}
